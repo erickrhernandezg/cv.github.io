@@ -5,29 +5,25 @@ body{
 }
 
 .contenedor {
-	/*display: -ms-flex;
-	display: -webkit-flex;*/
 	display: flex;
     flex-wrap: wrap;
     justify-content:center;
 }
 
 .contenedor > div {
-	/*width: 50%;*/
 	padding: 5px;
 }
 
 .columna1{
     text-align: center;
-    /*margin-left: 20px;*/
-
 }
 
 .columna2{
-    /*margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;*/
     background-color: lightgray;
+}
+
+.columna2:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .foto {
@@ -39,12 +35,17 @@ body{
 
 .foto:hover{
     border: 3px solid green;
+    transition-duration: 1s;
 }
 
 .nombre {
     padding: 10px;
     font-size: 30px;
     font-weight: bold;
+}
+
+.nombre:hover{
+    text-shadow: 2px 2px 4px lightgray;
 }
 
 .titulo{
@@ -73,6 +74,11 @@ ul {
     background-color: black;
     color: white;
     font-weight: bold;
+    
+}
+
+.idiomas:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .habilidades {
