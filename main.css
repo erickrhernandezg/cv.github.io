@@ -1,139 +1,365 @@
-body{
-    /*max-width: 900px;
-    margin: auto; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+*{
+    box-sizing: border-box;
 }
 
-.contenedor {
-	display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
+html{
+    scroll-behavior: smooth;
 }
 
-.contenedor > div {
-	padding: 5px;
-}
-
-.columna1{
-    text-align: center;
-}
-
-.columna2{
-    background-color: lightgray;
-}
-
-.columna2:hover{
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.foto {
-    margin-top: 20px;
-    width: 200px;
-    border-radius: 400px;
-    border: 3px solid black;
-}
-
-.foto:hover{
-    border: 3px solid green;
-    transition-duration: 1s;
-}
-
-.nombre {
-    padding: 10px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.nombre:hover{
-    text-shadow: 2px 2px 4px lightgray;
-}
-
-.titulo{
-    font-size: 18px;
-    padding: 10px;
-}
-
-.objetivo{
-    font-size: 15px;
-    padding: 10px;
-}
-
-.contacto{
-    font-size: 15px;
-    padding: 10px;
-    font-weight: bold;
-}
-
-ul {
-    padding: 0;
-    list-style-position: inside;
-  }
-
-.idiomas {
-    padding: 10px;
-    background-color: black;
-    color: white;
-    font-weight: bold;
-    
-}
-
-.idiomas:hover{
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.habilidades {
-    padding: 10px;;
-    font-weight: bold;
-}
-
-.experiencia_profesional {
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-}
-
-.preparacion_academica {
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-}
-
-li{
-    font-weight: normal;
-}
-
-.actividades{
-    text-align:justify;
-}
-
-.puesto{
-    text-align: left;
-    padding-top: 10px;
-}
-
-.empresa{
-    font-weight: normal;
-    padding: 3px;
-    font-style: italic;
-}
-
-.fecha{
-    font-weight:normal;
-    font-size: 13px;
-}
+h1{ font-size: 3em;}
+h2{ font-size: 2.5em;}
+h3{ font-size: 2em;}
+h4{ font-size: 1.5em;}
+h5{ font-size: 1em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;
+    padding: 0;}
+li {font-size: 1.1em;}
 
 .escuela{
-    padding-top: 5px;
-    text-align: left;
+    padding-bottom: 20px;
 }
 
-.carrera{
-    font-weight: normal;
-    padding: 3px;
-    font-style: italic;
+body{
+    font-family: 'Roboto', sans-serif ;
+    margin: 0;
 }
 
-.estatus{
-    font-weight:normal;
-    font-size: 13px;
+.color-acento {
+    color: green;
 }
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: green;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: green;
+}
+
+#hero{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    , url("media/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero .img-container{
+    background-image: url("media/foto.jpg");
+    background-size: cover;
+    height: 200px;
+    width: 200px; 
+    border-radius: 100px;
+}
+
+#formacion h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#formacion h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#formacion .estatus{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#formacion .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#experiencia {
+    background-color: rgb(30,30,30);
+    color:white;
+    text-align: center;
+}
+
+#experiencia .container{
+    padding: 100px 12px;
+}
+
+#experiencia h2{
+    margin-top: 0;
+}
+
+#experiencia h3{
+    margin-top: 0;
+}
+
+#experiencia h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#experiencia h5{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#experiencia p{
+    display: none;
+}
+
+#experiencia .carta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 25px;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    , url("media/soporte.png");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    , url("media/capacitacion.jpg");
+}
+
+.carta:nth-child(3){    
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    )
+    , url("media/skill-supervisor.png");
+}
+
+#contacto .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#contacto h2{
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: rgb(30,30,30);
+    color:white;
+    text-align: right;
+    margin-bottom: 0;
+    padding: 5px 12px;
+}
+
+footer p{
+    margin: 0;
+    font-size: 1em;
+}
+
+footer .container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 1000px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    #hero{
+        padding-top: 100px;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #formacion .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #formacion .escuela{
+        width: 25%;
+        max-width: 600px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #formacion .habilidades{
+        width: 20%;
+        max-width: 600px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #formacion .idiomas{
+        width: 15%;
+        max-width: 600px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #formacion h2{
+        margin-top: 0px;
+    }
+
+    #formacion .img-container{
+        background-image: url("media/formacion.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 350px; 
+        border-radius: 20px;
+    }
+
+    #laboral{
+        display: flex;
+        justify-content: center;
+    }
+
+    #experiencia p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #experiencia h2{
+        font-size: 4em;
+    }
+
+    #experiencia h3{
+        margin-top: 0;
+    }
+
+    #experiencia .carta{
+        padding: 50px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        )
+        ,url("media/soporte.png");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        )
+        ,url("media/capacitacion.jpg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        )
+        ,url("media/skill-supervisor.png");
+
+    }
+
+    #caracteristicas{
+        background-image: url("media/background-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
